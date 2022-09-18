@@ -29,3 +29,5 @@ receipt_number
 
 
 student_id, full_name, gender, dob, email, student_number, parent_number, address, city, pin_code, work, c_name, e_number, branch, course, batch_timing, tutor_name, photofile, docfile, total_fees, paid_fees, payment_type, cheque_no, admission_date, receipt_number
+
+full_name =ramgender =Maledob =2022-09-19email =cakant70@gmail.comstudent =8888prent =8888address =88888city =8888pin =88888work =Studentc name =88888e_name =Branch =Bhande Plotcorse =C & C++ Programming with Projectbatch =11.00 TO 12.00 PMtutor =888888photo =pexels-eberhard-grossgasteiger-640781.jpgdoc =pexels-eberhard-grossgasteiger-640781.jpgtotal =88888paid =888888pay type =Cashcheq no =888888Addmission =2022-09-19Receipt =888888

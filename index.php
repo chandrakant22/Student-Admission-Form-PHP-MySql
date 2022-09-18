@@ -1,3 +1,4 @@
+<?php require 'config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +30,7 @@ $city=$_POST['city'];
 $pin_code=$_POST['pin_code'];
 $work=$_POST['work'];
 $c_name=$_POST['c_name'];
-$e_name=$_POST['e_name'];
+$e_number=$_POST['e_number'];
 $branch=$_POST['branch'];
 $course=$_POST['course'];
 $batch_timing=$_POST['batch_timing'];
@@ -72,9 +73,9 @@ $receipt_number=$_POST['receipt_number'];
 
 
 
-echo "<script>alert('Welcome to ".$course_type."')</script>";
+echo "<script>alert('Welcome to ".$course."')</script>";
 
-$sql="INSERT INTO student_admission(student_id, full_name, gender, dob, email, student_number, parent_number, address, city, pin_code, work, c_name, e_number, branch, course, batch_timing, tutor_name, photofile, docfile, total_fees, paid_fees, payment_type, cheque_no, admission_date, receipt_number)values('.$student_id.','.$full_name.','.$gender.','.$dob.','.$email.','.$student_number.','.$parent_number.','.$address.','.$city.','.$pin_code.','.$work.','.$c_name.','.$e_number.','.$branch.','.$course.','.$batch_timing.','.$tutor_name.','.$photofile.','.$docfile.','.$total_fees.','.$paid_fees.','.$payment_type.','.$cheque_no.','.$admission_date.','.$receipt_number)";  
+$sql="INSERT INTO student_admission(full_name, gender, dob, email, student_number, parent_number, address, city, pin_code, work, c_name, e_number, branch, course, batch_timing, tutor_name, photofile, docfile, total_fees, paid_fees, payment_type, cheque_no, admission_date, receipt_number)values('.$full_name.','.$gender.','.$dob.','.$email.','.$student_number.','.$parent_number.','.$address.','.$city.','.$pin_code.','.$work.','.$c_name.','.$e_number.','.$branch.','.$course.','.$batch_timing.','.$tutor_name.','.$photofile.','.$docfile.','.$total_fees.','.$paid_fees.','.$payment_type.','.$cheque_no.','.$admission_date.','.$receipt_number)";  
 
  echo "<script>alert('hello ".$sql."')</script>"; 
    
@@ -84,7 +85,7 @@ $sql="INSERT INTO student_admission(student_id, full_name, gender, dob, email, s
        echo "<script>alert('Data inserted!')</script>"; 
     else
        echo "<script>alert('Data Not inserted!')</script>"; 
-$con-> close(); 
+//$con-> close(); 
     
 }
 
@@ -299,7 +300,7 @@ $con-> close();
                             <span class="btnText"><b>< </b>Back</span>
                         </div>
                         
-                        <button class="sumbit">
+                        <button class="sumbit" value="Submit" name="submit">
                             <span class="btnText">Submit ✔</span>
                             <!-- <i class="uil uil-navigator"></i> -->
                         </button>
