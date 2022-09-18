@@ -1,3 +1,7 @@
+database name : asterisc_cretificate_Student
+table name : student_admission
+
+student_id
 full_name
 gender
 dob
@@ -23,4 +27,5 @@ cheque_no
 admission_date
 receipt_number
 
-24
+
+student_id, full_name, gender, dob, email, student_number, parent_number, address, city, pin_code, work, c_name, e_number, branch, course, batch_timing, tutor_name, photofile, docfile, total_fees, paid_fees, payment_type, cheque_no, admission_date, receipt_number
