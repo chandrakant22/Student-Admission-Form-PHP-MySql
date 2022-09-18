@@ -17,38 +17,74 @@
 if(isset($_POST['submit']))
 {
     
-$branch=$_POST['branch'];
+
 $full_name=$_POST['full_name'];
-$marksheet_name=$_POST['marksheet_name'];
 $gender=$_POST['gender'];
-$address=$_POST['address'];
+$dob=$_POST['dob'];
 $email=$_POST['email'];
-$mobile_number=$_POST['mobile_number'];
+$student_number=$_POST['student_number'];
 $parent_number=$_POST['parent_number'];
+$address=$_POST['address'];
+$city=$_POST['city'];
+$pin_code=$_POST['pin_code'];
+$work=$_POST['work'];
 $c_name=$_POST['c_name'];
+$e_name=$_POST['e_name'];
+$branch=$_POST['branch'];
+$course=$_POST['course'];
 $batch_timing=$_POST['batch_timing'];
-$course_type=$_POST['course_type'];
-$course_name=$_POST['course_name'];
+$tutor_name=$_POST['tutor_name'];
+$photofile=$_POST['photofile'];
+$docfile=$_POST['docfile'];
 $total_fees=$_POST['total_fees'];
-$fees_paid=$_POST['fees_paid'];
-$payment_mode=$_POST['payment_mode'];
-$trx_no=$_POST['trx_no'];
-$imageupload=$_POST['imageupload'];
+$paid_fees=$_POST['paid_fees'];
+$payment_type=$_POST['payment_type'];
+$cheque_no=$_POST['cheque_no'];
+$admission_date=$_POST['admission_date'];
+$receipt_number=$_POST['receipt_number'];
 
-//echo 'Branch ='.$branch;
-echo "<script>alert('Welcome to ".$course_type."')</script>";
 
-$sql="INSERT INTO student_details(full_name,marksheet_name,gender,address,email,mobile_number,c_name,branch,batch_timing, course_type,course_name,total_fees,fees_paid,payment_mode,trx_no,imageupload,parent_number)values('$full_name','$marksheet_name','$gender','$address','$email','$mobile_number','$c_name','$branch','$batch_timing','$course_type','$course_name','$total_fees','$fees_paid','$payment_mode','$trx_no','$imageupload','$parent_number')";  
+echo 'full_name ='.$full_name;
+echo 'gender ='.$gender;
+echo 'dob ='.$dob;
+echo 'email ='.$email;
+echo 'student ='.$student_number;
+echo 'prent ='.$parent_number;
+echo 'address ='.$address;
+echo 'city ='.$city;
+echo 'pin ='.$pin_code;
+echo 'work ='.$work;
+echo 'c name ='.$c_name;
+echo 'e_name ='.$e_name;
+echo 'Branch ='.$branch;
+echo 'corse ='.$course;
+echo 'batch ='.$batch_timing;
+echo 'tutor ='.$tutor_name;
+echo 'photo ='.$photofile;
+echo 'doc ='.$docfile;
+echo 'total ='.$total_fees;
+echo 'paid ='.$paid_fees;
+echo 'pay type ='.$payment_type;
+echo 'cheq no ='.$cheque_no;
+echo 'Addmission ='.$admission_date;
+echo 'Receipt ='.$receipt_number;
 
- echo "<script>alert('hello ".$sql."')</script>"; 
+
+
+
+// echo "<script>alert('Welcome to ".$course_type."')</script>";
+
+// $sql="INSERT INTO student_details(full_name,marksheet_name,gender,address,email,mobile_number,c_name,branch,batch_timing, course_type,course_name,total_fees,fees_paid,payment_mode,trx_no,imageupload,parent_number)values('$full_name','$marksheet_name','$gender','$address','$email','$mobile_number','$c_name','$branch','$batch_timing','$course_type','$course_name','$total_fees','$fees_paid','$payment_mode','$trx_no','$imageupload','$parent_number')";  
+
+//  echo "<script>alert('hello ".$sql."')</script>"; 
    
    
-   $status=mysqli_query($con,$sql);    
-    if($status)
-       echo "<script>alert('Data inserted!')</script>"; 
-    else
-       echo "<script>alert('Data Not inserted!')</script>"; 
-//$con-> close(); 
+//    $status=mysqli_query($con,$sql);    
+//     if($status)
+//        echo "<script>alert('Data inserted!')</script>"; 
+//     else
+//        echo "<script>alert('Data Not inserted!')</script>"; 
+// //$con-> close(); 
     
 }
 
